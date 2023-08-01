@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY DICTIONARY APP</title>
+</head>
+<body>
+    <h1>Dictionary</h1>
+    <form action="" method="post">
+        Word:
+        <input type="text" name = "word"><br>
+        <button type="submit">Find Meaning</button>
+    </form>
+
+    {% if meaning %}
+    <p>{{meaning}}</p>
+    {% endif %}
+</body>
+</html>
