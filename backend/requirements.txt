@@ -1,2 +1,5 @@
 flask
+redis
 requests
+flask_caching
+python-dotenv

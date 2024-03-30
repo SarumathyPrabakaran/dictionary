@@ -5,10 +5,20 @@ services:
     build:
       context: ./frontend
     ports:
-      - "5002:5002" # Map host port 8000 to container port 8000
+      - "5002:5002" 
 
   backend:
     build:
       context: ./backend
     ports:
       - "5001:5001" 
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend/app.py:/app/app.py
+
+  redis:
+    image: redis
+    container_name: redis_container1
+    ports: 
+      - "6379:6379"
