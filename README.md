@@ -16,6 +16,23 @@ The following components will be provisioned using Terraform:
 8. **Cloud Map Configuration**: Service discovery and connection establishment within the ECS cluster using Cloud Map.
 9. **Private Hosted Zone and Namespace**: Creation of a private hosted zone and namespace for service discovery.
 
+## Local Testing
+
+Make sure you have Docker installed on your system.
+
+Clone this repository to your local machine:
+
+`git clone https://github.com/your-username/dictionary.git`
+
+`cd dictionary`
+
+Run the following command to build and start the containers:
+
+`docker-compose up --build`
+
+Open your web browser and visit the frontend service url to access the app.
+
+
 ## Deployment Steps
 Follow these steps to deploy the Dockerized Dictionary App:
 
